@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching in AI | AI를 연구하는 교사 모임</title>
+    <meta name="description" content="인공지능교육 선도의 중심, Teaching in AI 교사 연구회">
+    <meta name="keywords" content="Teaching in AI, 인공지능, AI교육, 교사연구회, AI융합교육">
+    <meta property="og:title" content="Teaching in AI">
+    <meta property="og:description" content="인공지능교육 선도의 중심">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Scanline overlay -->
+    <div class="scanline"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <div class="nav-logo">
+                <span class="prompt">&gt;</span> teaching_in_ai<span class="blink">_</span>
+            </div>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">/about</a>
+                <a href="#members" class="nav-link">/members</a>
+                <a href="#achievements" class="nav-link">/achievements</a>
+                <a href="#publications" class="nav-link">/publications</a>
+                <a href="#projects" class="nav-link">/projects</a>
+                <a href="#contact" class="nav-link">/contact</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" class="mobile-link">/about</a>
+        <a href="#members" class="mobile-link">/members</a>
+        <a href="#achievements" class="mobile-link">/achievements</a>
+        <a href="#publications" class="mobile-link">/publications</a>
+        <a href="#projects" class="mobile-link">/projects</a>
+        <a href="#contact" class="mobile-link">/contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-content">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="terminal-title">teaching_in_ai -- bash</span>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-line">
+                        <span class="prompt-symbol">$</span>
+                        <span class="typed-text" id="heroTyped"></span>
+                        <span class="cursor" id="heroCursor">|</span>
+                    </div>
+                    <div class="hero-output" id="heroOutput">
+                        <div class="hero-ascii">
+ _____ ___   _   ___ _  _ ___ _  _  ___   _        _   ___
+|_   _| __| /_\ / __| || |_ _| \| |/ __| (_)_ _   /_\ |_ _|
+  | | | _| / _ \ (__| __ || || .` | (_ | | | ' \ / _ \ | |
+  |_| |___/_/ \_\___|_||_|___|_|\_|\___| |_|_||_/_/ \_\___|
+                        </div>
+                        <p class="hero-tagline">인공지능교육 선도의 중심</p>
+                        <p class="hero-sub">AI를 연구하는 교사 모임 &middot; Since 2020</p>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-label">MEMBERS</span>
+                                <span class="stat-value" data-count="38">0</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">SINCE</span>
+                                <span class="stat-value">2020</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">BOOKS</span>
+                                <span class="stat-value" data-count="8">0</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">STATUS</span>
+                                <span class="stat-value status-active">ACTIVE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>scroll down</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-cmd">$ cat ./about.md</span>
+                <h2 class="section-title">연구회 소개</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-card fade-in">
+                    <div class="card-header">
+                        <span class="card-icon">[ i ]</span>
+                        <h3>목적</h3>
+                    </div>
+                    <p>본 연구회는 2020년 원더키디 원년을 시작으로 설립되어 인공지능 공동 연수 및 개별 주제 연구 발표, 교육청 및 한국과학창의재단, 테크기업 등의 사업을 운영하며 연구회원들의 발전과 인공지능 교육에 기여하고자 만들어졌습니다.</p>
+                </div>
+                <div class="about-card fade-in">
+                    <div class="card-header">
+                        <span class="card-icon">[ # ]</span>
+                        <h3>이름의 의미</h3>
+                    </div>
+                    <p><strong>Teaching in AI</strong> &mdash; AI를 연구하는 교사 모임이라는 뜻을 담고 있습니다. 인공지능 기술을 교육 현장에 적용하고, 교사들의 AI 역량을 강화하며, AI 교육의 발전을 이끌어갑니다.</p>
+                </div>
+                <div class="about-card fade-in">
+                    <div class="card-header">
+                        <span class="card-icon">[ * ]</span>
+                        <h3>핵심 활동</h3>
+                    </div>
+                    <ul class="tag-list">
+                        <li class="tag"># 연구회 설립</li>
+                        <li class="tag"># 인공지능교육</li>
+                        <li class="tag"># 인공지능 연구</li>
+                        <li class="tag"># 다양한 사업</li>
+                        <li class="tag"># 도서 출간</li>
+                        <li class="tag"># 강사 활동</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Members Section -->
+    <section class="section section-alt" id="members">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-cmd">$ members --stats</span>
+                <h2 class="section-title">회원 현황</h2>
+            </div>
+            <div class="members-content">
+                <div class="members-overview fade-in">
+                    <div class="overview-terminal">
+                        <div class="terminal-mini-header">
+                            <span class="dot-sm red"></span>
+                            <span class="dot-sm yellow"></span>
+                            <span class="dot-sm green"></span>
+                            <span class="terminal-mini-title">members.log</span>
+                        </div>
+                        <div class="overview-body">
+                            <div class="log-line"><span class="log-time">[2020]</span> 연구회 창립 &mdash; 10명으로 시작</div>
+                            <div class="log-line"><span class="log-time">[2021]</span> 2기 회원 모집</div>
+                            <div class="log-line"><span class="log-time">[2022]</span> 3기 회원 모집 &mdash; 15명 돌파</div>
+                            <div class="log-line"><span class="log-time">[2023]</span> 3기 유지 &mdash; 꾸준한 성장</div>
+                            <div class="log-line"><span class="log-time">[2024]</span> 4기 회원 모집 &mdash; 25명 돌파</div>
+                            <div class="log-line highlight"><span class="log-time">[2025]</span> 현재 총 38명 활동 중</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="members-stats fade-in">
+                    <h3 class="stats-title">> 학위 현황</h3>
+                    <div class="degree-grid">
+                        <div class="degree-card">
+                            <div class="degree-bar" data-width="3%"></div>
+                            <div class="degree-info">
+                                <span class="degree-label">박사학위</span>
+                                <span class="degree-count">1명</span>
+                            </div>
+                        </div>
+                        <div class="degree-card">
+                            <div class="degree-bar" data-width="8%"></div>
+                            <div class="degree-info">
+                                <span class="degree-label">박사과정</span>
+                                <span class="degree-count">3명</span>
+                            </div>
+                        </div>
+                        <div class="degree-card">
+                            <div class="degree-bar" data-width="47%"></div>
+                            <div class="degree-info">
+                                <span class="degree-label">석사학위</span>
+                                <span class="degree-count">18명</span>
+                            </div>
+                        </div>
+                        <div class="degree-card">
+                            <div class="degree-bar" data-width="8%"></div>
+                            <div class="degree-info">
+                                <span class="degree-label">석사과정</span>
+                                <span class="degree-count">3명</span>
+                            </div>
+                        </div>
+                        <div class="degree-card">
+                            <div class="degree-bar" data-width="34%"></div>
+                            <div class="degree-info">
+                                <span class="degree-label">학사</span>
+                                <span class="degree-count">13명</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="members-total">
+                        <span class="total-label">TOTAL_ACTIVE:</span>
+                        <span class="total-value">38명</span>
+                        <span class="dormant">(휴면 2명: 건강 1, 학위과정 1)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section" id="achievements">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-cmd">$ cat ./awards.log</span>
+                <h2 class="section-title">수상 및 성과</h2>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card fade-in">
+                    <div class="achievement-year">2025</div>
+                    <div class="achievement-badge new-badge">NEW</div>
+                    <h3>대한민국 정보교육상</h3>
+                    <p>연구회원 1명 수상</p>
+                </div>
+                <div class="achievement-card fade-in">
+                    <div class="achievement-year">2025~2020</div>
+                    <h3>LEAD 연구회 사업</h3>
+                    <p>6년 연속 선정 및 운영</p>
+                </div>
+                <div class="achievement-card fade-in">
+                    <div class="achievement-year">2024</div>
+                    <h3>몽골 교원 초청 연수</h3>
+                    <p>몽골 ICT 현대화 사업 지원 (APEC)</p>
+                </div>
+                <div class="achievement-card fade-in">
+                    <div class="achievement-year">2025</div>
+                    <h3>디지털새싹 프로그램</h3>
+                    <p>레고스파이크를 통해 배우는 백제문화체험</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section class="section section-alt" id="publications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-cmd">$ ls ./publications/</span>
+                <h2 class="section-title">도서 출간</h2>
+            </div>
+            <div class="publications-list">
+                <div class="pub-item fade-in">
+                    <div class="pub-year">2025</div>
+                    <div class="pub-info">
+                        <h3>Google로 칼퇴하는 교사들의 시크릿</h3>
+                        <p class="pub-meta">교사크리에이터협회</p>
+                    </div>
+                    <span class="pub-status released">RELEASED</span>
+                </div>
+                <div class="pub-item fade-in">
+                    <div class="pub-year">2025</div>
+                    <div class="pub-info">
+                        <h3>챗GPT로 시작하는 생성형 AI 프로젝트 수업</h3>
+                        <p class="pub-meta">테크빌교육</p>
+                    </div>
+                    <span class="pub-status released">RELEASED</span>
+                </div>
+                <div class="pub-item fade-in">
+                    <div class="pub-year">2025</div>
+                    <div class="pub-info">
+                        <h3>부모님과 함께하는 초등 영재의 첫걸음: 과학&middot;수학편</h3>
+                        <p class="pub-meta">시대인</p>
+                    </div>
+                    <span class="pub-status released">RELEASED</span>
+                </div>
+                <div class="pub-item fade-in">
+                    <div class="pub-year">2025</div>
+                    <div class="pub-info">
+                        <h3>그리, 로미와 함께 배우는 구글 탐험대</h3>
+                        <p class="pub-meta">앤써북</p>
+                    </div>
+                    <span class="pub-status released">RELEASED</span>
+                </div>
+                <div class="pub-item fade-in">
+                    <div class="pub-year">2023</div>
+                    <div class="pub-info">
+                        <h3>준의 AI 탐정노트</h3>
+                        <p class="pub-meta">에이블북스</p>
+                    </div>
+                    <span class="pub-status released">RELEASED</span>
+                </div>
+                <div class="pub-item fade-in">
+                    <div class="pub-year">2023</div>
+                    <div class="pub-info">
+                        <h3>메타버스로 구현하는 나만의 세상</h3>
+                        <p class="pub-meta">한빛아카데미</p>
+                    </div>
+                    <span class="pub-status released">RELEASED</span>
+                </div>
+                <div class="pub-item fade-in">
+                    <div class="pub-year">2023</div>
+                    <div class="pub-info">
+                        <h3>3I 디자인싱킹 이노베이터</h3>
+                        <p class="pub-meta">협신사</p>
+                    </div>
+                    <span class="pub-status released">RELEASED</span>
+                </div>
+                <div class="pub-item fade-in">
+                    <div class="pub-year">2022</div>
+                    <div class="pub-info">
+                        <h3>창의융합메이커</h3>
+                        <p class="pub-meta">마루비</p>
+                    </div>
+                    <span class="pub-status released">RELEASED</span>
+                </div>
+                <div class="pub-item fade-in">
+                    <div class="pub-year">2020</div>
+                    <div class="pub-info">
+                        <h3>너도 한번 AI 만들어볼래?</h3>
+                        <p class="pub-meta">미디어숲</p>
+                    </div>
+                    <span class="pub-status released">RELEASED</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-cmd">$ systemctl status projects</span>
+                <h2 class="section-title">주요 사업</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-status-dot active"></div>
+                    <h3>LEAD 선도교사 연구회</h3>
+                    <p class="project-desc">교육청 LEAD 연구회 사업 (2020~2025 연속 선정)</p>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-status-dot active"></div>
+                    <h3>디지털새싹 사업</h3>
+                    <p class="project-desc">디지털새싹 교육프로그램 개발 및 수업 운영 (교원대)</p>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-status-dot active"></div>
+                    <h3>전국단위 수업 평가 연구회</h3>
+                    <p class="project-desc">다양한 수업 평가 자료 연구, 워크숍 참여, 온라인 수업 공개, 전국 수업 컨퍼런스 참여</p>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-status-dot active"></div>
+                    <h3>디지털기반 교육혁신 교사학습공동체</h3>
+                    <p class="project-desc">디지털 기반 교육 과정 운영 개발 및 적용, 성과 나눔</p>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-status-dot active"></div>
+                    <h3>몽골 교원 초청 연수</h3>
+                    <p class="project-desc">몽골 ICT 현대화 사업 지원 및 교원 초청 연수 운영 (APEC)</p>
+                </div>
+            </div>
+
+            <div class="lectures-section fade-in">
+                <div class="section-sub-header">
+                    <span class="section-cmd">$ cat ./lectures.md</span>
+                    <h3>강사 활동 내역</h3>
+                </div>
+                <div class="lectures-grid">
+                    <div class="lecture-item">
+                        <span class="lecture-icon">&gt;_</span>
+                        <span>교실혁명 선도교사 연구강사</span>
+                        <span class="lecture-org">(정보교육학회, 교원대, 창비, 서울대)</span>
+                    </div>
+                    <div class="lecture-item">
+                        <span class="lecture-icon">&gt;_</span>
+                        <span>찾아가는 학교 연수 사업 강사</span>
+                        <span class="lecture-org">(충남대학교)</span>
+                    </div>
+                    <div class="lecture-item">
+                        <span class="lecture-icon">&gt;_</span>
+                        <span>디지털튜터 양성사업 강사</span>
+                    </div>
+                    <div class="lecture-item">
+                        <span class="lecture-icon">&gt;_</span>
+                        <span>AIEDAP 마스터 교원 연수 강사</span>
+                    </div>
+                    <div class="lecture-item">
+                        <span class="lecture-icon">&gt;_</span>
+                        <span>AIDT 역량강화 연수 강사</span>
+                    </div>
+                    <div class="lecture-item">
+                        <span class="lecture-icon">&gt;_</span>
+                        <span>교육정보원 영재교육원 강사 및 교사대상 연수 강사</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-cmd">$ echo $CONTACT_INFO</span>
+                <h2 class="section-title">연락처</h2>
+            </div>
+            <div class="contact-terminal fade-in">
+                <div class="terminal-mini-header">
+                    <span class="dot-sm red"></span>
+                    <span class="dot-sm yellow"></span>
+                    <span class="dot-sm green"></span>
+                    <span class="terminal-mini-title">contact.sh</span>
+                </div>
+                <div class="contact-body">
+                    <div class="contact-line">
+                        <span class="contact-key">EMAIL</span>
+                        <span class="contact-sep">=</span>
+                        <a href="mailto:teachinginai@gmail.com" class="contact-val">"teachinginai@gmail.com"</a>
+                    </div>
+                    <div class="contact-line">
+                        <span class="contact-key">LOCATION</span>
+                        <span class="contact-sep">=</span>
+                        <span class="contact-val">"대한민국"</span>
+                    </div>
+                    <div class="contact-line">
+                        <span class="contact-key">FOUNDED</span>
+                        <span class="contact-sep">=</span>
+                        <span class="contact-val">"2020"</span>
+                    </div>
+                    <div class="contact-line">
+                        <span class="contact-key">STATUS</span>
+                        <span class="contact-sep">=</span>
+                        <span class="contact-val status-green">"회원 모집 중"</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <span class="footer-logo">&gt; teaching_in_ai</span>
+                <span class="footer-copy">&copy; 2020&ndash;2025 Teaching in AI. All rights reserved.</span>
+                <span class="footer-tagline">인공지능교육 선도의 중심</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
