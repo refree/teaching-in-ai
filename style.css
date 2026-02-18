@@ -289,14 +289,22 @@ body {
 }
 
 .hero-ascii {
-    font-family: var(--font-mono);
-    font-size: 0.85rem;
-    line-height: 1.2;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-bottom: 1.8rem;
+}
+
+.hero-ascii-line {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 2.8rem;
+    line-height: 1.4;
     color: var(--accent);
-    white-space: pre;
-    margin-bottom: 1.5rem;
-    overflow-x: auto;
-    text-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+    text-shadow:
+        0 0 10px rgba(0, 255, 136, 0.6),
+        0 0 30px rgba(0, 255, 136, 0.3),
+        0 0 60px rgba(0, 255, 136, 0.15);
+    display: block;
 }
 
 .hero-tagline {
@@ -990,8 +998,8 @@ body {
         padding: 5rem 1rem 2rem;
     }
 
-    .hero-ascii {
-        font-size: 0.55rem;
+    .hero-ascii-line {
+        font-size: 1.8rem;
     }
 
     .hero-stats {
@@ -1056,8 +1064,8 @@ body {
 }
 
 @media (max-width: 480px) {
-    .hero-ascii {
-        font-size: 0.42rem;
+    .hero-ascii-line {
+        font-size: 1.1rem;
     }
 
     .hero-tagline {
