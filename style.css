@@ -289,10 +289,8 @@ body {
 }
 
 .hero-ascii {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
     margin-bottom: 1.8rem;
+    overflow-x: auto;
 }
 
 .hero-ascii-line {
